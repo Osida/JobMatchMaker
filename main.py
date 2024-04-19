@@ -1,12 +1,12 @@
 import argparse
 
+# Main application file
 
-def read_file(file_path):
-    try:
-        with open(file_path, 'r') as file:
-            return file.read()
-    except FileNotFoundError:
-        return "File not found"
+from file_handler import read_file, save_to_file, get_next_version_number
+from text_analysis import analyze_text_with_nltk, analyze_text_with_spacy
+from api_interaction import call_api
+from user_interaction import get_user_role_choice, get_user_input
+from error_handling import handle_file_error, handle_api_error, handle_user_input_error
 
 
 def main():
