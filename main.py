@@ -1,6 +1,6 @@
 import argparse
 
-from file_handler import load_file_content
+from file_handler import load_file_content, print_file_content
 
 
 def run_jobmatch_maker_cli():
@@ -10,8 +10,9 @@ def run_jobmatch_maker_cli():
     arguments = argument_parser.parse_args()
     resume_content = load_file_content(arguments.resume)
     job_description_content = load_file_content(arguments.jobdesc)
-    print(f'Resume file content:\n{resume_content}')
-    print(f'Job description file content:\n{job_description_content}')
+    print_file_content(resume_content, 'Resume')
+    print_file_content(job_description_content, 'Job Description')
+
 
 if __name__ == '__main__':
     run_jobmatch_maker_cli()
