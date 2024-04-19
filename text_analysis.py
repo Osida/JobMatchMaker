@@ -1,10 +1,24 @@
-# Handles text processing and analysis
+def nltk_text_analysis(text):
+    """
+    Analyzes text using NLTK.
 
-def analyze_text_with_nltk(text):
-    # Existing function to analyze text with NLTK
+    Parameters:
+    text (str): The text to analyze.
+
+    Returns:
+    ...: The result of the analysis.
+    """
     ...
 
 
-def analyze_text_with_spacy(text):
-    # Existing function to analyze text with spaCy
+def spacy_text_analysis(text):
+    """
+    Analyzes text using spaCy.
+
+    Parameters:
+    text (str): The text to analyze.
+
+    Returns:
+    ...: The result of the analysis.
+    """
     ...
